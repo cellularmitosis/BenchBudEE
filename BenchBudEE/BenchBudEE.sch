@@ -36,7 +36,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 8
 Title ""
-Date "9 feb 2014"
+Date "10 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -73,14 +73,14 @@ F6 "SCLK" I L 5750 1900 60
 F7 "CS_N" I L 5750 2000 60 
 $EndSheet
 $Sheet
-S 5800 5500 1000 800 
+S 5750 5150 1050 700 
 U 52F6E993
 F0 "Relay" 50
 F1 "Relay.sch" 50
-F2 "DIN+" I L 5800 5600 60 
-F3 "DIN-" I L 5800 5700 60 
-F4 "Relay+" I R 6800 5600 60 
-F5 "Relay-" O R 6800 5700 60 
+F2 "DIN+" I L 5750 5250 60 
+F3 "DIN-" I L 5750 5350 60 
+F4 "Relay+" I R 6800 5250 60 
+F5 "Relay-" O R 6800 5350 60 
 $EndSheet
 $Sheet
 S 2900 1800 950  850 
@@ -89,28 +89,33 @@ F0 "Power" 50
 F1 "Power.sch" 50
 $EndSheet
 $Sheet
-S 5850 4050 1050 900 
+S 5750 4100 1050 700 
 U 52F6E9DA
 F0 "LED Driver" 50
 F1 "LEDdriver.sch" 50
-F2 "EN" I L 5850 4150 60 
-F3 "FREQ" I L 5850 4250 60 
-F4 "String+" I R 6900 4150 60 
-F5 "String-" O R 6900 4250 60 
+F2 "EN" I L 5750 4200 60 
+F3 "FREQ" I L 5750 4300 60 
+F4 "String+" I R 6800 4200 60 
+F5 "String-" O R 6800 4300 60 
 $EndSheet
 $Sheet
-S 5750 2650 1100 950 
+S 5750 2650 1050 1100
 U 52F6E9EB
 F0 "Fan" 50
 F1 "Fan.sch" 50
-F2 "Power+" O R 6850 2750 60 
-F3 "Power-" I R 6850 2850 60 
-F4 "Tach" I R 6850 2950 60 
-F5 "Tach_out" O L 5750 2850 60 
+F2 "Power+" O R 6800 2750 60 
+F3 "Power-" I R 6800 2850 60 
+F4 "Tach" I R 6800 2950 60 
+F5 "Tach_out" O L 5750 3450 60 
 F6 "Fan_In" I L 5750 2750 60 
+F7 "Current Measure" O L 5750 3550 60 
+F8 "MOSI" I L 5750 2950 60 
+F9 "MISO" O L 5750 3050 60 
+F10 "SCLK" I L 5750 3150 60 
+F11 "CS_N" I L 5750 3250 60 
 $EndSheet
 $Sheet
-S 7700 2250 500  4100
+S 8300 1800 500  4100
 U 52F6EA1D
 F0 "Terminal Block" 50
 F1 "TerminalBlock.sch" 50
