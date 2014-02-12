@@ -1,4 +1,4 @@
-update=2/9/2014 8:35:55 PM
+update=2/11/2014 9:14:53 PM
 version=1
 last_client=kicad
 [cvpcb]
@@ -83,5 +83,6 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=relay_spdt
+LibName32=5566-20A
 [general]
 version=1
