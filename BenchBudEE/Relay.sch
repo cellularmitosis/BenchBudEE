@@ -31,14 +31,16 @@ LIBS:contrib
 LIBS:valves
 LIBS:relay_spdt
 LIBS:5566-20A
+LIBS:AP5726
+LIBS:arduino
 LIBS:BenchBudEE-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 9
+Sheet 3 9
 Title ""
-Date "13 feb 2014"
+Date "24 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -47,13 +49,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text HLabel 2900 4350 0    60   Input ~ 0
-DIN+
-Text HLabel 2900 4450 0    60   Input ~ 0
-DIN-
+RELAY+
+Text HLabel 2900 4450 0    60   Output ~ 0
+RELAY-
 Text HLabel 7900 3100 2    60   BiDi ~ 0
-NC
+RELAY_NC
 Text HLabel 7900 3300 2    60   BiDi ~ 0
-NO
+RELAY_NO
 $Comp
 L RELAY_SPDT K?
 U 1 1 52F83A2E
@@ -66,7 +68,7 @@ F 3 "~" H 7100 3150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 7900 2750 2    60   BiDi ~ 0
-COM
+RELAY_COM
 Wire Wire Line
 	7500 3100 7900 3100
 Wire Wire Line
@@ -217,16 +219,14 @@ Wire Wire Line
 $Comp
 L +12V #PWR?
 U 1 1 52F83D30
-P 5300 4350
-F 0 "#PWR?" H 5300 4300 20  0001 C CNN
-F 1 "+12V" H 5300 4450 30  0000 C CNN
-F 2 "" H 5300 4350 60  0000 C CNN
-F 3 "" H 5300 4350 60  0000 C CNN
-	1    5300 4350
+P 5500 3400
+F 0 "#PWR?" H 5500 3350 20  0001 C CNN
+F 1 "+12V" H 5500 3500 30  0000 C CNN
+F 2 "" H 5500 3400 60  0000 C CNN
+F 3 "" H 5500 3400 60  0000 C CNN
+	1    5500 3400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5100 4400 5300 4400
 $Comp
 L GND #PWR?
 U 1 1 52F83D4D
@@ -257,8 +257,6 @@ Wire Wire Line
 	5000 3600 5000 3700
 Wire Wire Line
 	5100 4200 5100 4150
-Wire Wire Line
-	5300 4400 5300 4350
 $Comp
 L DIODE D?
 U 1 1 52F83F01
@@ -284,4 +282,21 @@ Connection ~ 6600 3250
 Wire Wire Line
 	6400 3650 6600 3650
 Connection ~ 6600 3650
+$Comp
+L R R?
+U 1 1 530982E3
+P 5500 3900
+F 0 "R?" V 5580 3900 40  0000 C CNN
+F 1 "R" V 5507 3901 40  0000 C CNN
+F 2 "~" V 5430 3900 30  0000 C CNN
+F 3 "~" H 5500 3900 30  0000 C CNN
+	1    5500 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3400 5500 3650
+Wire Wire Line
+	5500 4150 5500 4400
+Wire Wire Line
+	5500 4400 5100 4400
 $EndSCHEMATC

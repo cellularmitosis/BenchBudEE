@@ -31,14 +31,16 @@ LIBS:contrib
 LIBS:valves
 LIBS:relay_spdt
 LIBS:5566-20A
+LIBS:AP5726
+LIBS:arduino
 LIBS:BenchBudEE-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 9
+Sheet 5 9
 Title ""
-Date "13 feb 2014"
+Date "24 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -46,12 +48,162 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 4050 2900 0    60   Input ~ 0
-EN
-Text HLabel 4050 3000 0    60   Input ~ 0
-FREQ
-Text HLabel 4750 2900 0    60   Input ~ 0
-String+
-Text HLabel 4750 3000 0    60   Output ~ 0
-String-
+Text HLabel 2550 4050 0    60   Input ~ 0
+LED_PWM
+Text HLabel 9100 3250 2    60   Output ~ 0
+LED_STRING+
+Text HLabel 9100 4050 2    60   Output ~ 0
+LED_STRING-
+$Comp
+L AP5726 U?
+U 1 1 530A5517
+P 5650 3950
+F 0 "U?" H 5650 4350 60  0000 C CNN
+F 1 "AP5726" H 5650 3950 60  0000 C CNN
+F 2 "~" H 5650 3950 60  0000 C CNN
+F 3 "~" H 5650 3950 60  0000 C CNN
+	1    5650 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 530A5526
+P 5650 3250
+F 0 "L?" V 5600 3250 40  0000 C CNN
+F 1 "INDUCTOR" V 5750 3250 40  0000 C CNN
+F 2 "~" H 5650 3250 60  0000 C CNN
+F 3 "~" H 5650 3250 60  0000 C CNN
+	1    5650 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5950 3250 6050 3250
+Wire Wire Line
+	6000 3300 6000 3250
+Connection ~ 6000 3250
+$Comp
+L C C?
+U 1 1 530A5573
+P 4650 3500
+F 0 "C?" H 4650 3600 40  0000 L CNN
+F 1 "C" H 4656 3415 40  0000 L CNN
+F 2 "~" H 4688 3350 30  0000 C CNN
+F 3 "~" H 4650 3500 60  0000 C CNN
+	1    4650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 530A5582
+P 4650 3750
+F 0 "#PWR?" H 4650 3750 30  0001 C CNN
+F 1 "GND" H 4650 3680 30  0001 C CNN
+F 2 "" H 4650 3750 60  0000 C CNN
+F 3 "" H 4650 3750 60  0000 C CNN
+	1    4650 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3700 4650 3750
+Wire Wire Line
+	5350 3250 4250 3250
+Wire Wire Line
+	4250 3250 4250 3050
+Wire Wire Line
+	4650 3300 4650 3250
+Connection ~ 4650 3250
+Wire Wire Line
+	5300 3300 5300 3250
+Connection ~ 5300 3250
+$Comp
+L GND #PWR?
+U 1 1 530A55CB
+P 5650 4650
+F 0 "#PWR?" H 5650 4650 30  0001 C CNN
+F 1 "GND" H 5650 4580 30  0001 C CNN
+F 2 "" H 5650 4650 60  0000 C CNN
+F 3 "" H 5650 4650 60  0000 C CNN
+	1    5650 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4600 5650 4650
+$Comp
+L R R?
+U 1 1 530A55EA
+P 6800 4400
+F 0 "R?" V 6880 4400 40  0000 C CNN
+F 1 "R" V 6807 4401 40  0000 C CNN
+F 2 "~" V 6730 4400 30  0000 C CNN
+F 3 "~" H 6800 4400 30  0000 C CNN
+	1    6800 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4050 9100 4050
+$Comp
+L GND #PWR?
+U 1 1 530A5605
+P 6800 4700
+F 0 "#PWR?" H 6800 4700 30  0001 C CNN
+F 1 "GND" H 6800 4630 30  0001 C CNN
+F 2 "" H 6800 4700 60  0000 C CNN
+F 3 "" H 6800 4700 60  0000 C CNN
+	1    6800 4700
+	1    0    0    -1  
+$EndComp
+Text GLabel 4250 3050 1    60   Input ~ 0
+5V_FUSED
+Wire Wire Line
+	6400 3850 6500 3850
+Wire Wire Line
+	6500 3850 6500 3250
+Wire Wire Line
+	6450 3250 9100 3250
+$Comp
+L DIODESCH D?
+U 1 1 530A5676
+P 6250 3250
+F 0 "D?" H 6250 3350 40  0000 C CNN
+F 1 "DIODESCH" H 6250 3150 40  0000 C CNN
+F 2 "~" H 6250 3250 60  0000 C CNN
+F 3 "~" H 6250 3250 60  0000 C CNN
+	1    6250 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4650 6800 4700
+Connection ~ 6800 4050
+$Comp
+L CP1 C?
+U 1 1 530A5703
+P 7950 3550
+F 0 "C?" H 8000 3650 50  0000 L CNN
+F 1 "CP1" H 8000 3450 50  0000 L CNN
+F 2 "~" H 7950 3550 60  0000 C CNN
+F 3 "~" H 7950 3550 60  0000 C CNN
+	1    7950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 530A5712
+P 7950 3850
+F 0 "#PWR?" H 7950 3850 30  0001 C CNN
+F 1 "GND" H 7950 3780 30  0001 C CNN
+F 2 "" H 7950 3850 60  0000 C CNN
+F 3 "" H 7950 3850 60  0000 C CNN
+	1    7950 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 3750 7950 3850
+Wire Wire Line
+	7950 3250 7950 3350
+Connection ~ 6500 3250
+Connection ~ 7950 3250
+Wire Wire Line
+	6800 4050 6800 4150
+Wire Wire Line
+	4900 4050 2550 4050
 $EndSCHEMATC
