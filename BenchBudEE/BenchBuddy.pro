@@ -1,6 +1,6 @@
-update=9/19/2013 8:49:39 PM
+update=3/2/2014 7:32:32 PM
 version=1
-last_client=eeschema
+last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
@@ -36,8 +36,6 @@ LibName8=led
 LibName9=dip_sockets
 LibName10=pga_sockets
 LibName11=valves
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=../BenchBuddy
@@ -78,3 +76,5 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=BenchBuddy
+[general]
+version=1
