@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2
+EESchema Schematic File Version 2  date 10/10/2013 12:18:22 AM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,18 +29,15 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:relay_spdt
-LIBS:5566-20A
-LIBS:AP5726
-LIBS:arduino
-LIBS:BenchBudEE-cache
+LIBS:BenchBuddy
+LIBS:BenchBuddy-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 9
+Sheet 8 9
 Title ""
-Date "24 feb 2014"
+Date "10 oct 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -48,28 +45,61 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 7050 2450 0    60   Input ~ 0
+Text HLabel 1850 2000 0    60   Input ~ 0
 V+_ADJ
-Text HLabel 7050 2550 0    60   Input ~ 0
+Text HLabel 1850 2200 0    60   Input ~ 0
 V-_ADJ
-Text HLabel 7050 2750 0    60   Output ~ 0
+Text HLabel 1850 2700 0    60   Output ~ 0
 FAN_OUT+
-Text HLabel 7050 2850 0    60   Output ~ 0
+Text HLabel 1850 2950 0    60   Output ~ 0
 FAN_OUT-
-Text HLabel 7050 3050 0    60   Input ~ 0
+Text HLabel 1900 3400 0    60   Input ~ 0
 TACH_IN
-Text HLabel 7050 3250 0    60   Output ~ 0
+Text HLabel 1900 3800 0    60   Output ~ 0
 LED_STRING+
-Text HLabel 7050 3350 0    60   Output ~ 0
+Text HLabel 1900 3950 0    60   Output ~ 0
 LED_STRING-
-Text HLabel 7050 3550 0    60   Output ~ 0
+Text HLabel 1900 4400 0    60   Input ~ 0
 TC_IN+
-Text HLabel 7050 3650 0    60   Output ~ 0
+Text HLabel 1900 4550 0    60   Input ~ 0
 TC_IN-
-Text HLabel 7050 3850 0    60   BiDi ~ 0
+Text HLabel 2000 6650 0    60   BiDi ~ 0
 RELAY_COM
-Text HLabel 7050 3950 0    60   BiDi ~ 0
+Text HLabel 2000 6900 0    60   BiDi ~ 0
 RELAY_NO
-Text HLabel 7050 4050 0    60   BiDi ~ 0
+Text HLabel 2000 7150 0    60   BiDi ~ 0
 RELAY_NC
+$Comp
+L +3.3V #PWR?
+U 1 1 523FFDA7
+P 1750 950
+F 0 "#PWR?" H 1750 910 30  0001 C CNN
+F 1 "+3.3V" H 1750 1060 30  0000 C CNN
+F 2 "~" H 1750 950 60  0000 C CNN
+F 3 "~" H 1750 950 60  0000 C CNN
+	1    1750 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 523FFDB6
+P 1750 1250
+F 0 "#PWR?" H 1750 1340 20  0001 C CNN
+F 1 "+5V" H 1750 1340 30  0000 C CNN
+F 2 "~" H 1750 1250 60  0000 C CNN
+F 3 "~" H 1750 1250 60  0000 C CNN
+	1    1750 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 523FFDC5
+P 1750 1550
+F 0 "#PWR?" H 1750 1550 30  0001 C CNN
+F 1 "GND" H 1750 1480 30  0001 C CNN
+F 2 "~" H 1750 1550 60  0000 C CNN
+F 3 "~" H 1750 1550 60  0000 C CNN
+	1    1750 1550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

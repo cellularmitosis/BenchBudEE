@@ -1,9 +1,9 @@
-(kicad_pcb (version 3) (host pcbnew "(2013-07-07 BZR 4022)-stable")
+(kicad_pcb (version 3) (host pcbnew "(2013-03-19 BZR 4004)-stable")
 
   (general
     (links 0)
     (no_connects 0)
-    (area 0 0 0 0)
+    (area 104.953999 146.736999 270.204001 210.387001)
     (thickness 1.6)
     (drawings 4)
     (tracks 0)
@@ -12,7 +12,13 @@
     (nets 1)
   )
 
-  (page A3)
+  (page USLedger)
+  (title_block 
+    (title BenchBudEE)
+    (rev A)
+    (company "Contextual Electronics")
+  )
+
   (layers
     (15 F.Cu signal)
     (2 PWR power)
@@ -30,14 +36,14 @@
   )
 
   (setup
-    (last_trace_width 0.254)
+    (last_trace_width 0.1524)
     (user_trace_width 0.1524)
     (trace_clearance 0.254)
     (zone_clearance 0.508)
     (zone_45_only no)
     (trace_min 0.1524)
     (segment_width 0.2)
-    (edge_width 0.1)
+    (edge_width 0.15)
     (via_size 0.889)
     (via_drill 0.635)
     (via_min_size 0.508)
@@ -49,20 +55,21 @@
     (uvia_min_size 0.381)
     (uvia_min_drill 0.127)
     (pcb_text_width 0.3)
-    (pcb_text_size 1.5 1.5)
+    (pcb_text_size 1 1)
     (mod_edge_width 0.15)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 1.5 1.5)
+    (pad_size 1 1)
     (pad_drill 0.6)
-    (pad_to_mask_clearance 0)
+    (pad_to_mask_clearance 0.254)
+    (solder_mask_min_width 0.127)
     (aux_axis_origin 0 0)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 3178497)
       (usegerberextensions true)
       (excludeedgelayer true)
-      (linewidth 0.150000)
+      (linewidth 152400)
       (plotframeref false)
       (viasonmask false)
       (mode 1)
@@ -98,9 +105,9 @@
     (add_net "")
   )
 
-  (gr_line (start 68.58 195.58) (end 68.58 259.08) (angle 90) (layer Edge.Cuts) (width 0.1))
-  (gr_line (start 233.68 195.58) (end 68.58 195.58) (angle 90) (layer Edge.Cuts) (width 0.1))
-  (gr_line (start 233.68 259.08) (end 233.68 195.58) (angle 90) (layer Edge.Cuts) (width 0.1))
-  (gr_line (start 68.58 259.08) (end 233.68 259.08) (angle 90) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 136.271 95.758) (end 136.271 159.258) (angle 90) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 301.371 95.758) (end 136.271 95.758) (angle 90) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 301.371 159.258) (end 301.371 95.758) (angle 90) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 136.271 159.258) (end 301.371 159.258) (angle 90) (layer Edge.Cuts) (width 0.15))
 
 )
