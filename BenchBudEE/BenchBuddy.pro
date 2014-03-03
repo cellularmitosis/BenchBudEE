@@ -1,13 +1,11 @@
-update=10/10/2013 1:18:53 AM
+update=3/2/2014 7:48:57 PM
 version=1
-last_client=pcbnew
+last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
 [cvpcb/libraries]
 EquName1=devcms
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=../BenchBuddy
@@ -80,3 +78,5 @@ LibName9=dip_sockets
 LibName10=pga_sockets
 LibName11=valves
 LibName12=BenchBudEE
+[general]
+version=1
